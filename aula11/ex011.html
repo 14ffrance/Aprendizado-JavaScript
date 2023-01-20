@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+
+<body>
+    <h1>Nacionalidade</h1>
+    Em que país você mora? <input type="txt" name="txtpais" id="txtpais" />
+    <input type="button" value="Confirmar" onclick="confirmar()" />
+    <div id="firmar">
+
+    </div>
+    <script>
+        function confirmar() {
+            var txtpais = window.document.getElementById('txtpais')
+            var afirmar = window.document.querySelector('div#firmar')
+            var nacionalidade = txtpais.value;
+            firmar.innerHTML = `<p>Seu país de origem é <strong>${nacionalidade}</strong></p>`;
+            if (nacionalidade == 'Brasil' || nacionalidade == 'brasil') {
+                afirmar.innerHTML = `<p>Você é Brasileiro!`;
+            } else {
+                afirmar.innerHTML += `<p>Você é estrangeiro!`;
+            }
+        }
+    </script>
+</body>
+
+</html>
