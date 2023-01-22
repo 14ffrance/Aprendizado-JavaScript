@@ -1,9 +1,9 @@
 function carregar() {
-    var mensagem = window.document.getElementById('mensagem')
-    var imagem = window.document.getElementById('imagem')
-    var foto = window.document.getElementById('foto')
+    var mensagem = document.getElementById('mensagem')
+    var imagem = document.getElementById('imagem')
+    var foto = document.getElementById('foto')
     var data = new Date()
-    var minuto = data.getMinutes()
+    var minuto = data.getMinutes ()
     //var hora = 18
     var hora = data.getHours()
     mensagem.innerHTML = `Agora são ${hora} horas e ${minuto} minutos!`
