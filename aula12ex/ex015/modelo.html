@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+           <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+           </p>
+           <p>Sexo:
+                <input type="radio" name="radiosexo" id="masculino" checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="radiosexo" id="feminino">
+                <label for="feminino">Feminino</label>
+           </p>
+           <p>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+           </p>
+        </div>
+        <div id="resultado">
+            Preencha os dados acima corretamente!
+        </div>
+        <div id="foto">
+            <img id="imagemfotos" src='imagens/ponto-de-interrogacao.png' alt="pessoas">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; IBGE RJ</p>
+    </footer>
+    <script src="jss/script.js"></script>
+</body>
+
+</html>
